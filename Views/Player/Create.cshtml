@@ -1,0 +1,25 @@
+@model Player
+
+<h2>Registrar Nuevo Jugador</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Nombre:</label>
+        <input asp-for="Name" required />
+    </div>
+    <div>
+        <label>Edad:</label>
+        <input asp-for="Age" type="number" min="15" required />
+    </div>
+    <div>
+        <label>Posición:</label>
+        <input asp-for="Position" required />
+    </div>
+    <div>
+        <label>Equipo:</label>
+        <select asp-for="TeamId" asp-items="ViewBag.Teams">
+            <option disabled selected>-- Selecciona un equipo --</option>
+        </select>
+    </div>
+    <button type="submit">Registrar</button>
+</form>
