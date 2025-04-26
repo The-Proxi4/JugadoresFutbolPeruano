@@ -1,3 +1,5 @@
+#nullable enable
+
 namespace JugadoresFutbolPeruano.Models;
 
 public class ErrorViewModel

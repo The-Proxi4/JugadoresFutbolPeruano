@@ -17,6 +17,6 @@ namespace JugadoresFutbolPeruano.Models
         public string Position { get; set; }
 
         // Relaciones
-        public List<Assignment> Assignments { get; set; }
+        public List<Assignment> Assignments { get; set; } = new List<Assignment>();
     }
 }
