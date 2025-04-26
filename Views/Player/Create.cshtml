@@ -19,11 +19,10 @@
         <span asp-validation-for="Position" class="text-danger"></span>
     </div>
     <div>
-<select name="teamId" asp-items="ViewBag.Teams">
-    <option value="">Seleccione un equipo</option>
-</select>
-
-
+        <label>Equipo</label>
+        <select name="teamId" asp-items="ViewBag.Teams">
+            <option value="">Seleccione un equipo</option>
+        </select>
     </div>
 
     <button type="submit">Registrar</button>
